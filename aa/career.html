@@ -15,8 +15,8 @@
 <h3>AI 기반 개발 체계와 조직 지식 관리</h3>
 <p><strong>개발 Harness 구축·실제 프로젝트 적용</strong></p>
 <p>신규 프로젝트는 PRD를 분석해 프로젝트별 Harness를 구축하는 것부터 시작했습니다. 분석 결과로 Technical Spec·ADR을 작성하고, WBS와 CPM 분석을 바탕으로 실행할 Task를 Markdown으로 정리했습니다. 구현의 기준이 되는 분석·설계·WBS·CPM·Task 문서는 도출 후 직접 검수했습니다.</p>
-<p>이후 구현은 Implementer, 검증은 별도의 리뷰 Sub-agent가 담당하도록 구성하고 구현·리뷰·QA를 자동 수행했습니다. Orchestrator는 단계별 리뷰를 진행하고 문제가 있으면 이전 단계로 돌아가도록 구성했습니다.</p>
-<p>수행 결과는 Report로 남겨 사후 점검했습니다. Report에서 문제를 발견하면 다시 작업을 요청해 Harness Workflow를 수행했습니다.</p>
+<p>이후 구현은 Implementer, 검증은 별도의 리뷰 Sub-agent가 담당하도록 구성했습니다. 이 역할 분리에 따라 구현·리뷰·QA를 자동 수행하도록 했습니다. Orchestrator는 단계별 리뷰를 진행하고 문제가 있으면 이전 단계로 돌아가도록 구성했습니다.</p>
+<p>수행 결과는 Report로 남겨 사후 점검했습니다. Report에서 문제를 발견하면 재작업을 요청해 Harness Workflow가 다시 실행되도록 했습니다.</p>
 <p>Development Context에 아키텍처 원칙을 명시해 개발 기준을 제공했습니다. 모든 작업이 완료되면 Harness 자체의 개선사항을 도출하고 개선 작업을 수행하도록 Feedback Loop를 구성했습니다.</p>
 <p>AI 도입 이전에 개발한 프로젝트는 기존 구조를 분석해 Harness를 구축했습니다. 균일한 품질을 위한 Development Context와 QA·리뷰용 Skill·Agent를 구성했습니다. 기술부채를 주간 단위로 분석하고 개선 과제를 도출하는 Agent도 구축했습니다.</p>
 <p><strong>Spec Driven Development 적용 사례: 제휴 API 연동</strong></p>

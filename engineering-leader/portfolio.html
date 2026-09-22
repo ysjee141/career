@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>지윤성 | Engineering Leadership Portfolio · 지윤성</title><link rel="stylesheet" href="assets/style.css"></head><body>
+<div class="site-shell"><aside class="sidebar"><a class="brand" href="index.html"><span class="brand-mark">JY</span><span><strong>지윤성</strong><small>Application Architect</small></span></a><div class="nav-label">DOCUMENTS</div><nav aria-label="문서 메뉴"><a class="nav-link" href="coverletter.html">자기소개</a><a class="nav-link" href="resume.html">이력서</a><a class="nav-link" href="career.html">경력기술</a><a class="nav-link active" href="portfolio.html">포트폴리오</a></nav><div class="sidebar-foot">Backend · Full-stack · AI-assisted Engineering</div></aside>
+<main class="content"><div class="content-inner"><h1>지윤성 | Engineering Leadership Portfolio</h1>
+<p>010-4198-0392 · ysjee141@gmail.com</p>
+<h2>리더십의 기준</h2>
+<p>기술 리더십은 설계안을 제시하는 데서 끝나지 않습니다. 사업을 중단할 수 없는 제약과 팀의 실행 여력을 함께 보고, 우선순위를 정하고, 역할과 기준을 나누고, 결과를 확인한 뒤 다음 실행 방식을 개선해야 합니다.</p>
+<p>저는 다음 네 가지 방식으로 기술과 조직의 실행을 연결해 왔습니다.</p>
+<ul><li><strong>방향:</strong> 문제의 원인과 운영 제약을 기준으로 구조를 바꿀 범위를 정합니다.</li><li><strong>실행:</strong> 핵심 설계와 구현에 참여하고, 팀이 맡을 책임과 인터페이스를 정리합니다.</li><li><strong>검증:</strong> 리뷰·QA·Report로 결과를 확인하고 문제가 있으면 이전 단계로 돌아갑니다.</li><li><strong>성장:</strong> 공통 기준과 업무 배분을 통해 구성원이 더 넓은 영역을 담당하도록 돕습니다.</li></ul>
+<h2>조직 표준을 만들고 구성원의 성장을 지원하다</h2>
+<p>리더의 역할은 개인의 판단을 조직의 실행 방식으로 바꾸는 일이라고 생각합니다. 사내 GitHub 브랜치 전략과 CI/CD 표준을 정의해 개발부터 배포까지의 공통 흐름을 정리했습니다. 설계 리뷰를 통해 기술 방향과 구현 기준을 확인하고, 프로젝트별 Harness와 Development Context를 적용해 구성원이 같은 기준을 참조하도록 했습니다.</p>
+<p>구성원과 1:1 면담을 진행해 업무 수행을 코칭했습니다. 구성원의 경험과 성장 방향을 고려해 새로운 기술과 책임을 맡도록 업무를 배분하고, 리뷰와 피드백으로 다음 실행을 지원했습니다. 개인의 경험을 문서·표준·리뷰 체계로 확장해 조직의 실행 품질을 높이는 방식입니다.</p>
+<p>Jira·GitHub·Slack·Confluence의 업무 데이터를 AI로 분석해 구성원별 업무와 리소스 투입, PR·리뷰 활동, 실 전체 업무 비중을 파악했습니다. Daily·Weekly HTML Report와 업무 분석 앱으로 결과를 공유하고, 조직의 업무 방향과 리소스 배분을 판단하는 자료로 활용했습니다.</p>
+<h2>1. 11개 티켓팅 시스템을 단일 플랫폼으로 전환하다</h2>
+<h3>문제와 제약</h3>
+<p>디바이스·장르·채널·언어별로 11개 시스템이 분리되어 있었습니다. 같은 요구사항을 여러 소스에 반복 반영해야 했습니다. 판매를 유지하면서 Classic ASP·.NET Framework·MS-SQL·Stored Procedure에 축적된 업무 규칙을 신규 플랫폼으로 옮겨야 했습니다.</p>
+<h3>리더의 판단</h3>
+<p>11개 시스템을 한 번에 교체하는 대신 공통 기능과 정책 차이를 분리하고, 채널·디바이스 차이는 설정과 정책으로 처리하는 단일 플랫폼을 설계했습니다. 전환 순서는 좌석 없는 전시 상품부터 시작해 운영 위험을 낮추도록 정했습니다. 프로덕트 조직과 상품별 적용 범위와 기존·신규 시스템 병행 방식을 조율했습니다.</p>
+<h3>실행과 조직 연결</h3>
+<ul><li>좌석 데이터를 DocumentDB로 분리하고 캐시를 적용했습니다.</li><li>Stored Procedure의 비즈니스 로직을 Java·Kotlin 애플리케이션 계층으로 이동했습니다.</li><li>결제 완료 후 주문 생성에는 Kafka 이벤트를 적용했습니다.</li><li>핵심 구현과 리뷰에 참여하고 Next.js·React·Java·Kotlin·AWS ECS 기반 서비스의 기준을 공유했습니다.</li></ul>
+<h3>결과</h3>
+<p>동일 요구사항의 개발·반영 대상은 11개 시스템에서 1개 서비스로 줄었습니다. 2026-09-22 기준 공연·전시·스포츠를 포함한 전체 티켓팅 판매 상품의 약 95%가 신규 플랫폼에서 판매되고 있습니다. 이 사례에서 리더의 역할은 단순히 새 시스템을 설계하는 것이 아니라, 전환 순서와 책임 경계를 정해 팀과 프로덕트 조직이 실행할 수 있게 만드는 일이었습니다.</p>
+<h2>2. 반복 장애를 팀의 공통 구조 개선으로 바꾸다</h2>
+<h3>문제와 판단</h3>
+<p>대형 공연 판매 때 PDP 장애가 반복되었습니다. React 정적 파일과 Java API가 같은 WAS에서 제공되고 EC2별 Docker 컨테이너를 Shell Script로 배포했습니다. PDP 조회 API는 여러 백엔드 API를 동기식으로 호출해 프론트엔드(FE)에 필요한 데이터를 조합하고 있었습니다.</p>
+<p>장애가 발생한 코드만 수정하면 다음 공연에서 같은 문제가 반복될 수 있었습니다. 운영환경, 데이터 접근, API 조합 방식을 함께 바꾸고 팀이 새 구조를 개발할 수 있게 해야 했습니다.</p>
+<h3>실행</h3>
+<ul><li>정적 자산을 CloudFront·S3로 분리하고 EC2 운영을 ECS·Auto Scaling으로 전환했습니다.</li><li>선예매 인증 정보는 실시간 조회로 유지하고 공연정보·캐스팅 메타데이터는 캐시했습니다. 평시 TTL은 5분, 대형 공연 판매 직전·판매 중 TTL은 1시간으로 상품 오픈 시간에 맞춰 자동 적용했습니다.</li><li>Spring MVC·JDK 11 환경에서 CompletableFuture와 allOf를 사용해 다수 백엔드 호출을 비동기화하고 결과를 조합했습니다.</li><li>공통 BFF 구조·모듈과 코드 리뷰 기준을 제공하고 구성원별 경험에 따라 Java·Spring 업무를 단계적으로 배분했습니다.</li></ul>
+<h3>결과</h3>
+<p>PDP 노출용 데이터 조회 API의 대용량 트래픽 유입 시 평균 API 응답시간을 3~5초에서 1초 이내로 단축했습니다. 5명 팀 전원이 React와 Java·Spring BFF를 개발·운영하는 형태로 전환했습니다.</p>
+<h2>3. AI를 조직의 실행 체계로 적용하다</h2>
+<h3>문제</h3>
+<p>AI를 개발에 도입해도 프로젝트별 기준, 문서 품질, 리뷰와 QA 방식이 제각각이면 팀 전체의 실행 품질을 안정적으로 유지하기 어렵습니다. 개발실의 업무 정보도 Jira·GitHub·Slack·Confluence에 분산되어 있었습니다.</p>
+<h3>설계한 운영 방식</h3>
+<p>신규 프로젝트는 PRD 분석 → Technical Spec·ADR → WBS·CPM·Task → 구현 → 리뷰·QA → Report → Harness 개선의 흐름으로 운영했습니다. 분석·설계·실행 계획 문서는 직접 검수했습니다. 구현은 Implementer, 검증은 별도의 리뷰 Sub-agent가 맡도록 구성하고 구현·리뷰·QA를 자동 수행했습니다. Orchestrator는 단계별 리뷰와 이전 단계로의 복귀를 관리하도록 구성했습니다.</p>
+<p>기존 프로젝트는 코드와 문서를 분석해 Harness와 Development Context를 구성했습니다. 기술부채를 주간 단위로 분석하는 Agent와 QA·리뷰 Skill도 구성했습니다. 수행 Report는 승인 절차가 아니라 사후 점검 자료로 사용하고, 문제가 있으면 이전 단계로 돌아가 다시 Harness Workflow를 수행했습니다.</p>
+<h3>조직 운영에 적용</h3>
+<ul><li>Jira Label로 업무 유형을 분류하고 구성원별 리소스와 실 전체 업무 비중을 분석했습니다.</li><li>GitHub PR·리뷰 활동, Slack·Confluence의 업무와 커뮤니케이션을 함께 분석했습니다.</li><li>AI Agent가 매주 월요일 오전 8시에 실행되도록 예약하고, 같은 기능의 업무 분석 앱도 직접 개발했습니다.</li><li>결과를 Daily·Weekly HTML Report로 생성해 조직에 공유했습니다.</li></ul>
+<h3>의미</h3>
+<p>AI를 개별 코드 생성에 한정하지 않고, 명세·책임 경계·검증·조직 지식 관리에 적용했습니다. 이 방식은 팀원이 같은 기준을 참조하고, 리더가 실행 결과와 개선 지점을 확인할 수 있는 운영 구조를 만들기 위한 것이었습니다.</p>
+<h2>4. 제휴 연동의 책임 경계를 표준화하다</h2>
+<h3>문제</h3>
+<p>제휴사별 API 규격이 달라 동일 기능을 연동할 때 주문 영역의 3~4개 서비스에서 각각 개발해야 했습니다. 기존에는 주문 영역 개발자 2~3명이 필요했고, 제휴사 1곳의 설계 착수부터 QA 완료까지 약 2개월이 걸렸습니다.</p>
+<h3>판단과 설계</h3>
+<p>제휴사별 차이를 Adapter에 격리하고 내부 서비스는 SDK Connector의 통일된 인터페이스를 사용하도록 했습니다. API 명세·Mapping Table·Test Guide를 정형화하고 AI가 구현할 책임 범위도 Adapter 단위로 제한했습니다.</p>
+<h3>결과</h3>
+<table><thead><tr><th>비교 항목</th><th>기존</th><th>변경 후</th></tr></thead><tbody><tr><td>주문 영역의 개발 대상 서비스</td><td>3~4개</td><td>1개</td></tr><tr><td>주문 영역의 개발 인원</td><td>2~3명</td><td>1인 개발 가능</td></tr><tr><td>제휴사 1곳 설계 착수~QA 완료</td><td>약 2개월</td><td>약 2주</td></tr></tbody></table>
+<p>개발 기능의 범위는 동일하게 유지하면서 수정·구현해야 하는 서비스 범위를 줄였습니다. 명세·책임 경계의 표준화와 Harness 적용을 함께 진행한 결과입니다. 설계 기준과 검증 기준을 명시해 팀이 반복적으로 사용할 수 있는 연동 방식으로 바꿨습니다.</p>
+<h2>마무리</h2>
+<p>저는 조직의 기술 수준을 개인의 역량 합으로 보지 않습니다. 기술 방향을 설명하고, 실행 가능한 책임 경계를 만들고, 결과를 검증하고, 팀이 다음 작업에서 더 나은 선택을 하게 만드는 운영 체계의 결과로 봅니다. 다양한 도메인과 기술을 경험한 실행력을 바탕으로 제품의 변화와 구성원의 성장이 함께 일어나는 개발 조직을 만들고 싶습니다.</p></div></main></div></body></html>
